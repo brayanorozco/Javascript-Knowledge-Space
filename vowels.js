@@ -1,7 +1,6 @@
 const printVowels = (writtenSentence) => {
 
     let vowelsList = ['a', 'e', 'i', 'o', 'u'];
-    let filteredVowels = [];
 
     const result = writtenSentence.split('').filter(c => {
 
