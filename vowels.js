@@ -1,20 +1,14 @@
-let printVowels = (writtenSentence) => {
+const printVowels = (writtenSentence) => {
 
     let vowelsList = ['a', 'e', 'i', 'o', 'u'];
     let filteredVowels = [];
 
-    for (i = 0; i <= writtenSentence.length; i++) {
+    const result = writtenSentence.split('').filter(c => {
 
-        let selectedVowel = writtenSentence[i];
+        return vowelsList.includes(c);
+    });
 
-        if (selectedVowel === vowelsList[0] || selectedVowel === vowelsList[1] ||
-            selectedVowel === vowelsList[2] || selectedVowel === vowelsList[3] ||
-            selectedVowel === vowelsList[4]) {
-
-            filteredVowels += selectedVowel;
-        }
-    }
-    console.log(filteredVowels);
+    console.log(result);
 }
 
 printVowels("hello world");
