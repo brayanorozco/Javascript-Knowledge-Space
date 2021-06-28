@@ -93,24 +93,30 @@ Here are a few test cases:
 
 Test:   abbrev("Nice")
 Return:
-```'Nic 4'
+
+```
+'Nic 4'
 ```
 
 Test:   abbrev("I am your father")
 Return:
-```'I a 16'
+```
+'I a 16'
 ```
 
 Test:   abbrev("Supercalifragilisticexpialidocious")
 Return:
-```'Sup 34'
+```
+'Sup 34'
 ```
 
 Test:   abbrev("!")
 Return:
-```'!   1'
+```
+'!   1'
 ```
 
 Test:   abbrev("Yo")
-```'Yo  2'
+```
+'Yo  2'
 ```
